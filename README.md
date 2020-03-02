@@ -42,7 +42,7 @@ $response = $purchaseRequest->send();
 $form = $response->getRedirectResponse()->getData();
 
 // get production or test redirect url. Depends on the test flag passet on gateway initialization
-$redirectUrl = $responce->getRedirectUrl();
+$redirectUrl = $response->getRedirectUrl();
 ```
 
 ## Plans
