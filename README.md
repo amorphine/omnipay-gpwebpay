@@ -7,14 +7,14 @@
 processing library for PHP. This package implements PayPal support for Omnipay.
 
 ## Early Development
-The driver now supports generating payment form only via API HTTP only. See https://www.gpwebpay.cz/Content/downloads/GP_webpay_HTTP_EN.pdf for details.
+The driver now supports generating payment form only via API HTTP only. See https://www.gpwebpay.cz/downloads/GP_webpay_HTTP_EN.pdf for details.
 Example:
 
 ```
 use Omnipay\GpWebpay\GpWebpayGatewayFactory;
 
 // initialize gateway with sign keys, password and test mode flag
-$gateway = GpWebpayGatewayFactory::createInstance(
+$gateway = GpWebpayGatewayFactory::createHttpGatewayInstance(
     $publicKey,             // string with file content or 'file://' reference with absolute path
     $privateKey,            // string with file content or 'file://' reference with absolute path
     $privateKeyPassword,    // private key password
