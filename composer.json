@@ -1,0 +1,22 @@
+{
+    "name": "amorphine/omnipay-gpwebpay",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Amorphine\\OmnipayGpwebpay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pavel Fedin",
+            "email": "fe-pavel@yandex.ru"
+        }
+    ],
+    "require-dev": {
+        "omnipay/tests": "^4.1"
+    },
+    "require": {
+        "omnipay/common": "^3.1"
+    }
+}

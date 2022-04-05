@@ -11,7 +11,7 @@ The driver now supports generating payment form only via API HTTP only. See http
 Example:
 
 ```
-use Omnipay\GpWebpay\GpWebpayGatewayFactory;
+use Omnipay\Gpwebpay\GpWebpayGatewayFactory;
 
 // initialize gateway with sign keys, password and test mode flag
 $gateway = GpWebpayGatewayFactory::createHttpGatewayInstance(
@@ -32,7 +32,7 @@ $purchaseRequest = $gateway->purchase([
 ]);
 
 // you may also set form parameters via setters
-// see \Omnipay\GpWebpay\Message\GpWebpayHttpPurchaseRequestParameters to get available parameters
+// see \Omnipay\Gpwebpay\Message\GpWebpayHttpPurchaseRequestParameters to get available parameters
 $purchaseRequest->setDepositFlag('1');
 
 // validate form data, create signature
